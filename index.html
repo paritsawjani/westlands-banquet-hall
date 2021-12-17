@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Westlands Banquet Hall</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">WBH</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links active" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page">Our Services</a>
+          </li> 
+          <li class="navbar__item">
+            <a href="#pricing" class="navbar__links">Pricing</a>
+          </li> 
+          <li class="navbar__item">
+            <a href="#" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Welcome to Westlands Banquet Hall</h1>
+        <p class="hero__description">We Create Moments, Experiences & Magic in our Event Spaces</p>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"></div>
+        </div>
+        <div class="main__content">
+          <h1>About Us</h1>
+          <p>Westlands Banquet Centre is the most sought-after banqueting centre in Nairobi. 
+            Ideally located on Westlands Road, right next to Graffins college. 
+            This is the most ideal place for your events.  
+            With close proximity to Nairobi’s CBD, we are the ideal and most convenient banqueting venue for all conferences and events. 
+            Our spacious halls are large and spacious to facilitate all your event needs. </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+      <h1>Our Services</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Baby Showers</h2>
+          <p>AI Powered technology</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Confrences</h2>
+          <p>Take the lepa</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card">
+          <h2>Banquets</h2>
+          <p>100 Combinations</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+        <div class="services__card" id="last-service">
+          <h2>Weddings</h2>
+          <p>1000's of colors</p>
+          <div class="services__btn"><button>Get Started</button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="main" id="pricing">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>EVENT SPACE CHARGES</h1>
+          <p>Our conferencing spaces and/or banqueting halls are competitively priced based on the market trends and changes. 
+            Please see our different spaces available and charges </p>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Section-->
+    <section class="contact-us">
+    <div class="container">  
+      <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get an reply within 24 hours!</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+        </fieldset>
+      </form>
+    </section>
+      
+    </div>
+
+    <h1 style="text-align: center; color: #1E3799;">Quick Booking Enquiry Form</h1>
+    <form action="#" id="booking-form">
+		
+      <div class="tab-content">
+        <div class="tab-pane" id="step1">
+          <ul>
+            <li>
+              <label>How many guests in your group?</label>
+              <div class="errorTxt"></div>
+              <select name="bf_totalGuests" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="More">More</option>
+            </select>
+           </li>
+           <li style="list-style: none; display: inline">
+              <button class="next-btn next-btn1" type="button">Next</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="step2">
+          <ul>
+            <li>
+              <label>Which date are you looking to book on?</label>
+              <div class="errorTxt"></div>
+              <input type="text" class="datepicker" name="bf_date" placeholder="DD/MM/YYYY">
+            </li>
+            <li>
+              <label>What time of day?</label>
+              <div class="errorTxt"></div>
+              <select name="bf_time">
+                <option value="">Select</option>
+                <option value="Morning">Morning</option>
+                <option value="Midday">Midday</option>
+                <option value="Late afternoon, ending with a sunset">Late afternoon, ending with a sunset</option>
+              </select>
+            </li>
+            <li>
+              <label>How many hours will your function/conference last?</label>
+              <div class="errorTxt"></div>
+              <select name="bf_hours">
+                <option value="">Select</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8+</option>
+                <option value="Overnight (24 hours)">Overnight (24 hours)</option>
+              </select>
+            </li>
+            <li>
+              <button class="next-btn next-btn2" type="button">Next</button>
+            </li>
+          </ul>
+        </div>
+        <br>
+        <div class="tab-pane" id="step3">
+          <ul>
+            <li>
+              <label>What is your first and last name?</label>
+              <div class="errorTxt"></div>
+              <input type="text" name="bf_fullname">
+            </li>
+            <li>
+              <label>Which email address may we send your free estimate to?</label>
+              <div class="errorTxt"></div>
+              <input type="email" name="bf_email">
+            </li>
+            <li>
+              <label>Do you have any questions or a message? (Optional)</label>
+              <textarea name="bf_message"></textarea>
+            </li>
+            <li>
+              <button class="submit-btn" type="submit">Request My Free Estimate</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="progress-wrap">
+        <div class="line-progress-bar">
+          <div class="line"></div>
+          <ul class="checkout-bar">
+            <li class="progressbar-dots active"><span>step 1</span></li>
+            <li class="progressbar-dots"><span>step 2</span></li>
+            <li class="progressbar-dots"><span>Final step</span></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div id="loader" style="display: none;">
+        <img src="//d2erq0e4xljvr7.cloudfront.net/assets/img/ring.svg">
+      </div>
+    </form>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms & Conditions</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a>
+            <a href="/">View Videos</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">WBH</a>
+          </div>
+          <p class="website__rights">© Westlands Banquet Hall 2021. All rights reserved</p>
+          <div class="social__icons">
+            <a href="https://facebook.com" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://youtube.com" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="https://linkedin.com" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
